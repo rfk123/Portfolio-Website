@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Reza's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+        <div class="container">
+            <h1>Reza</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main id="home">
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <div class="welcome-text">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Hi! I'm Reza</p>
+                <p>I am a Computer Science graduate with a passion for coding and technology.</p>
+            </div>
+            <div class="welcome-image">
+                <img src="images/your-picture.jpg" alt="Picture of Reza">
+            </div>
+        </section>
         <!-- About Me Section -->
         <section>
             <h2>About Me</h2>
@@ -26,20 +39,41 @@
         <!-- Projects Section -->
         <section id="projects">
             <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
+            <div class="project-row">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <a href="https://github.com/yourusername/project1-repo" target="_blank">
+                        <img src="images/project1-thumbnail.jpg" alt="Project 1">
+                    </a>
+                    <div class="project-description">
+                        <p>Description of Project 1.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <a href="https://your-project2-link.com" target="_blank">
+                        <img src="images/project2-thumbnail.jpg" alt="Project 2">
+                    </a>
+                    <div class="project-description">
+                        <p>Description of Project 2.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <a href="https://github.com/yourusername/project3-repo" target="_blank">
+                        <img src="images/project3-thumbnail.jpg" alt="Project 3">
+                    </a>
+                    <div class="project-description">
+                        <p>Description of Project 3.</p>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <!-- Add more projects as needed -->
+            <!-- Add more rows as needed -->
         </section>
         <!-- Contact Form Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <form action="https://formspree.io/rfkamali@gmail.com" method="POST">
+            <form action="https://formspree.io/YOUR_EMAIL" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -51,7 +85,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Name</p>
+        <p>&copy; 2024 Reza</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
